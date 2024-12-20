@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.seatarts.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"WizardioHatusClientMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

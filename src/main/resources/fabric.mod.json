@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "wizardio-hatus",
+	"version": "${version}",
+	"name": "Wizardio Hatus",
+	"description": "A magic orientated mod focusing on simple but useful tricks and spells!",
+	"authors": [
+		"SeaTarts"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/wizardio-hatus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.seatarts.WizardioHatus"
+		],
+		"client": [
+			"net.seatarts.WizardioHatusClient"
+		],
+		"fabric-datagen": [
+			"net.seatarts.WizardioHatusDataGenerator"
+		]
+	},
+	"mixins": [
+		"wizardio-hatus.mixins.json",
+		{
+			"config": "wizardio-hatus.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
