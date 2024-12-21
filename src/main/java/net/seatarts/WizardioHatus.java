@@ -2,6 +2,7 @@ package net.seatarts;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.seatarts.registry.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
